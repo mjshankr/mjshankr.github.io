@@ -57,9 +57,6 @@ education:
     button:
       text: 'Read Thesis'
       url: 'https://github.com/mohan-s1/mohan-s1.github.io/blob/7b9c60214403d5d2fa79cbf0201bc20a724a1aea/files/undergrad_thesis/DMP_Thesis.pdf'
-      Courses included:
-        - CHE 4452: Data Science in Chemical Engineering
-        - CHEM 5220: Advanced Physical Chemistry II: Statistical Mechanics 
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
