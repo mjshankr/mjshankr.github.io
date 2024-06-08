@@ -43,7 +43,7 @@ profiles:
     url: https://orcid.org/
 
 interests:
-  - Atomistic and Coarse-Grained Simulations
+  - Molecular Simulations
   - Heterogenous Catalysis
   - Quantum Mechanics
 
