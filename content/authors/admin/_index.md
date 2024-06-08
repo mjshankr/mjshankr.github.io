@@ -24,7 +24,7 @@ role: Research Associate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Paolucci Group, University of Virginia
+  - name: Paolucci Group
     url: https://cpaolucc.github.io/
 
 # Social network links
