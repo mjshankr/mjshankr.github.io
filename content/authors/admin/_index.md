@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Knowledge Enthusiast
+title: Mohan Shankar
 
 # Name pronunciation (optional)
 name_pronunciation: 
@@ -36,7 +36,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/mjshankr
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/mohan-shankar-1076a1264
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid
@@ -179,4 +179,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hello there! I just graduated from the University of Virginia, completing my undergrad degree with a B.Sc. in Chemistry.
