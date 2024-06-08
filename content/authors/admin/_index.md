@@ -36,7 +36,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/mjshankr
   - icon: brands/linkedin
-    url: https://www.linkedin.com/mohan-shankar-1076a1264
+    url: www.linkedin.com/in/mohan-shankar-1076a1264
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid
