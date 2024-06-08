@@ -24,7 +24,7 @@ role: Research Associate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: University of Virginia
+  - name: Paolucci Group, University of Virginia
     url: https://cpaolucc.github.io/
 
 # Social network links
@@ -43,42 +43,23 @@ profiles:
     url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Atomistic and Coarse-Grained Simulations
+  - Heterogenous Catalysis
+  - Quantum Mechanics
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: B.Sc. Chemistry (highest distinction, ACS certified)
+    institution: University of Virginia
+    date_start: 2020-08-25
+    date_end: 2024-05-19
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Thesis on _Quantum Mechanical Effusion Rates out of a 2D Particle in a Box_. Supervised by [Dr. Sergei Egorov](https://chemistry.as.virginia.edu/people/profile/sae6z). 
     button:
       text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
+      url: 'https://github.com/mohan-s1/mohan-s1.github.io/blob/7b9c60214403d5d2fa79cbf0201bc20a724a1aea/files/undergrad_thesis/DMP_Thesis.pdf'
       Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - CHE 4452: Data Science in Chemical Engineering
+      - CHEM 5220: Advanced Physical Chemistry II: Statistical Mechanics 
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
@@ -136,14 +117,6 @@ skills:
         description: ''
         percent: 80
         icon: camera
-
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.
