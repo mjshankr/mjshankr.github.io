@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: static/resume.pdf
+        url: https://github.com/mjshankr/mjshankr.github.io/blob/30fdbdff51f52c636281b697674ff127d3a5c923/static/resume.pdf
     design:
       css_class: dark
       background:
