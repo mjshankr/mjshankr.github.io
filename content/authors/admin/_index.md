@@ -38,9 +38,9 @@ profiles:
   - icon: brands/linkedin
     url: www.linkedin.com/in/mohan-shankar-1076a1264
  # - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+  #  url: https://scholar.google.com/
 #  - icon: academicons/orcid
-    url: https://orcid.org/
+   # url: https://orcid.org/
 
 interests:
   - Molecular Simulations
