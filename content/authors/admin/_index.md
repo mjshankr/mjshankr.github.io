@@ -30,7 +30,7 @@ organizations:
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: email-fast-outline
+  - icon: hero/envelope
     url: 'mailto:mjs7eek@virginia.edu'
     label: Email Me
   - icon: brands/github
