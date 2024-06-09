@@ -30,7 +30,7 @@ organizations:
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: media/icons/email.svg
+  - icon: email-fast-outline
     url: 'mailto:mjs7eek@virginia.edu'
     label: Email Me
   - icon: brands/github
@@ -98,22 +98,6 @@ skills:
         description: ''
         percent: 40
         icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -149,4 +133,4 @@ awards:
 
 ## About Me
 
-Hello there! I just graduated from the University of Virginia, completing my undergrad degree with a B.Sc. in Chemistry.
+Hello there! I just graduated from the University of Virginia, completing my undergrad degree with a B.Sc in Chemistry. I'm interested in computational chemistry, and I currently work with the Paolucci group at UVA creating computational models to better understand catalytic systems of interest.
