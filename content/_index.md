@@ -35,7 +35,7 @@ sections:
       title: 'My Research'
       subtitle: ''
       text: |-
-        Currently, I study solent effects in catalytic systems through computational methods with the Paolucci group. In particular, I use DFT to explore zeolite systems with traits of both heterogenous and homogenous catalysis.
+        Currently, I study solvent effects in catalytic systems through computational methods with the Paolucci group. In particular, I use DFT to explore zeolite systems with traits of both heterogenous and homogenous catalysis.
 
     design:
       columns: '1'
