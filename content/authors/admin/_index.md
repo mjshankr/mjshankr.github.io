@@ -53,7 +53,7 @@ education:
     date_start: 2020-08-25
     date_end: 2024-05-19
     summary: |
-      Thesis on _Quantum Mechanical Effusion Rates out of a 2D Particle in a Box_. Supervised by [Dr. Sergei Egorov](https://chemistry.as.virginia.edu/people/profile/sae6z). 
+      Thesis on _Quantum Mechanical Effusion Rates out of a 2D Particle in a Box_ supervised by Dr. Sergei Egorov.
     button:
       text: 'Read Thesis'
       url: 'https://github.com/mohan-s1/mohan-s1.github.io/blob/7b9c60214403d5d2fa79cbf0201bc20a724a1aea/files/undergrad_thesis/DMP_Thesis.pdf'
