@@ -48,7 +48,7 @@ interests:
   - Quantum Mechanics
 
 education:
-  - area: B.Sc. Chemistry (highest distinction)
+  - area: B.Sc. Chemistry, 2024 (highest distinction)
     institution: University of Virginia
     date_start: 2020-08-25
     date_end: 2024-05-19
