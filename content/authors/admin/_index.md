@@ -33,10 +33,10 @@ profiles:
   - icon: hero/envelope
     url: 'mailto:mjs7eek@virginia.edu'
     label: Email Me
-  - icon: brands/github
-    url: https://github.com/mjshankr
   - icon: brands/linkedin
     url: www.linkedin.com/in/mohan-shankar-1076a1264
+  - icon: brands/github
+    url: https://github.com/mjshankr
  # - icon: academicons/google-scholar
   #  url: https://scholar.google.com/
 #  - icon: academicons/orcid
