@@ -70,12 +70,26 @@ permalink: /publications
     {% if pub.volume %} {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %},{% endif %}
     {% if pub.pages %} {{ pub.pages }}{% endif %}. ({{ pub.year }})
 
-    {% if pub.doi %}
-      DOI: {{ pub.doi }}.
-    {% elsif pub.preprint %}
-      *Preprint: {{ pub.preprint }}*
-    {% endif %}
+    {% if pub.doi %} DOI: {{ pub.doi }}.{% endif %}
+    {% if pub.preprint %} Preprint: {{ pub.preprint }}.{% endif %}
+    {% if pub.main %} [Main PDF]({{ pub.main }}).{% endif %}
+    {% if pub.si %} [SI]({{ pub.si }}).{% endif %}
   </p>
+
+  <!-- Theme tags -->
+  {% if pub.themes %}
+  <p style="margin-left: 20px; margin-top: -11px">
+    {% for theme in pub.themes %}
+      {% assign theme_data = themes | where: "name", theme | first %}
+      {% if theme_data %}
+        <span class="badge badge-pill badge-pill-custom" style="background-color: {{ theme_data.color }}">{{ theme }}</span>
+      {% endif %}
+    {% endfor %}
+  </p>
+  {% endif %}
+</div>
+{% endfor %}
+
 
   <!-- Buttons and theme tags -->
   {% if pub.preprint_url or pub.main or pub.si or pub.themes %}
