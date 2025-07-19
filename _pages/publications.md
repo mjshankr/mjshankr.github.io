@@ -59,19 +59,27 @@ permalink: /publications
 <div class="publication-item" data-themes="{{ pub.themes | join: ',' }}">
   <p class="hanging-indent">
     {{ pub.authors }}.
-    {% if pub.url %} 
-      [{{ pub.title }}]({{ pub.url }}). 
-    {% else %} 
-      {{ pub.title }}. 
+    {% if pub.url %}
+      <a href="{{ pub.url }}" style="white-space: nowrap;">{{ pub.title }}</a>.
+    {% else %}
+      {{ pub.title }}.
     {% endif %}
-    *{{ pub.journal }}*{% if pub.volume %} {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %},{% endif %}{% if pub.pages %} {{ pub.pages }}{% endif %}. ({{ pub.year }})
-    {% if pub.doi %} DOI: {{ pub.doi }} {% elsif pub.preprint %} *preprint: {{ pub.preprint }}*{% endif %}
+    <em>{{ pub.journal }}</em>
+    {% if pub.volume %} {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %},{% endif %}
+    {% if pub.pages %} {{ pub.pages }}{% endif %}.
+    ({{ pub.year }})
+    
+    {% if pub.doi %}
+      <span style="white-space: nowrap;">DOI: <a href="https://doi.org/{{ pub.doi }}">{{ pub.doi }}</a></span>
+    {% elsif pub.preprint %}
+      <span style="white-space: nowrap;"><em>preprint:</em> {{ pub.preprint }}</span>
+    {% endif %}
     
     {% if pub.main %}
-      [Main]({{ pub.main }})
+      <span style="white-space: nowrap;">[<a href="{{ pub.main }}">Main</a>]</span>
     {% endif %}
     {% if pub.si %}
-      [SI]({{ pub.si }})
+      <span style="white-space: nowrap;">[<a href="{{ pub.si }}">SI</a>]</span>
     {% endif %}
   </p>
 </div>
