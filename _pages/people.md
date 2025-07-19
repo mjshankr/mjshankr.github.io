@@ -88,9 +88,6 @@ University of Virginia<br></i>
 </div>
 
 ---
-
-
----
 <h2 style="text-align: center; padding: 30px">Undergraduate and Postgraduate Researchers</h2>
 <div class="row">
 {% for member in site.data.undergrads %}
