@@ -1,11 +1,10 @@
 ---
-title: "Coley Lab - Publications"
+title: "Paolucci Lab - Publications"
 layout: publications
-excerpt: "Coley Lab -- Publications."
+excerpt: "Paolucci Lab -- Publications."
 sitemap: false
 permalink: /publications
 ---
-
 <!-- Custom CSS -->
 <style>
   .hanging-indent {
@@ -19,23 +18,22 @@ permalink: /publications
     border-radius: 3px;
     border: none;
     box-shadow: none;
-    background-color: #0059b3;
+    background-color: #0059b3; /* Bootstrap primary color */
     color: white;
-    margin-right: 4px;
   }
   .btn-xs:hover, .btn-xs:focus, .btn-xs:active {
-    background-color: #011f4b;
+    background-color: #011f4b; /* Darker shade of primary color */
     box-shadow: none;
   }
   .badge-pill-custom {
-    margin-left: 5px;
-    border-radius: 10rem;
-    padding: 0.18em 0.6em;
-    font-size: 13px;
+      margin-left: 5px;
+      border-radius: 10rem;
+      padding: 0.18em 0.6em;
+      font-size: 13px;
   }
   .filter-button {
-    margin-right: 5px;
-    cursor: pointer;
+      margin-right: 5px;
+      cursor: pointer;
   }
 </style>
 
@@ -48,8 +46,7 @@ permalink: /publications
 <p>
   {% assign themes = site.data.research_themes %}
   **Research Themes:** (select to filter)
-  {% for theme in themes %}
-    <span class="badge badge-pill badge-pill-custom filter-button" data-theme="{{ theme.name }}" data-color="{{ theme.color }}" data-darker-color="{{ theme.darker_color }}" style="background-color: {{ theme.color }}">{{ theme.name }}</span>
+  {% for theme in themes %}<span class="badge badge-pill badge-pill-custom filter-button" data-theme="{{ theme.name }}" data-color="{{ theme.color }}" data-darker-color="{{ theme.darker_color }}" style="background-color: {{ theme.color }}">{{ theme.name }}</span>
   {% endfor %}
 </p>
 
@@ -58,61 +55,25 @@ permalink: /publications
 <!-- Display all publications -->
 {% assign themes = site.data.research_themes %}
 {% for pub in site.data.publications %}
+<!-- Citations -->
 <div class="publication-item" data-themes="{{ pub.themes | join: ',' }}">
   <p class="hanging-indent">
     {{ pub.authors }}.
-    {% if pub.url %}
-      [{{ pub.title }}]({{ pub.url }}).
-    {% else %}
-      {{ pub.title }}.
+    {% if pub.url %} 
+      [{{ pub.title }}]({{ pub.url }}). 
+    {% else %} 
+      {{ pub.title }}. 
     {% endif %}
-    *{{ pub.journal }}*
-    {% if pub.volume %} {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %},{% endif %}
-    {% if pub.pages %} {{ pub.pages }}{% endif %}. ({{ pub.year }})
-
-    {% if pub.doi %} DOI: {{ pub.doi }}.{% endif %}
-    {% if pub.preprint %} Preprint: {{ pub.preprint }}.{% endif %}
-    {% if pub.main %} [Main PDF]({{ pub.main }}).{% endif %}
-    {% if pub.si %} [SI]({{ pub.si }}).{% endif %}
-  </p>
-
-  <!-- Theme tags -->
-  {% if pub.themes %}
-  <p style="margin-left: 20px; margin-top: -11px">
-    {% for theme in pub.themes %}
-      {% assign theme_data = themes | where: "name", theme | first %}
-      {% if theme_data %}
-        <span class="badge badge-pill badge-pill-custom" style="background-color: {{ theme_data.color }}">{{ theme }}</span>
-      {% endif %}
-    {% endfor %}
-  </p>
-  {% endif %}
-</div>
-{% endfor %}
-
-
-  <!-- Buttons and theme tags -->
-  {% if pub.preprint_url or pub.main or pub.si or pub.themes %}
-  <p style="margin-left: 20px; margin-top: -11px">
-    {% if pub.preprint_url %}
-      <a href="{{ pub.preprint_url }}" class="btn btn-xs btn-primary" target="_blank">Preprint</a>
-    {% endif %}
+    *{{ pub.journal }}*{% if pub.volume %} {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %},{% endif %}{% if pub.pages %} {{ pub.pages }}{% endif %}. ({{ pub.year }})
+    {% if pub.doi %} DOI: {{ pub.doi }} {% elsif pub.preprint %} *preprint: {{ pub.preprint }}*{% endif %}
+    
     {% if pub.main %}
-      <a href="{{ pub.main }}" class="btn btn-xs btn-primary" target="_blank">Main PDF</a>
+      [Main]({{ pub.main }})
     {% endif %}
     {% if pub.si %}
-      <a href="{{ pub.si }}" class="btn btn-xs btn-primary" target="_blank">SI</a>
-    {% endif %}
-    {% if pub.themes %}
-      {% for theme in pub.themes %}
-        {% assign theme_data = themes | where: "name", theme | first %}
-        {% if theme_data %}
-          <span class="badge badge-pill badge-pill-custom" style="background-color: {{ theme_data.color }}">{{ theme }}</span>
-        {% endif %}
-      {% endfor %}
+      [SI]({{ pub.si }})
     {% endif %}
   </p>
-  {% endif %}
 </div>
 {% endfor %}
 
@@ -126,21 +87,34 @@ permalink: /publications
       const originalColor = button.getAttribute('data-color');
       const darkerColor = button.getAttribute('data-darker-color');
 
+      // Log the colors to the console to verify correct retrieval
+      console.log('Original Color:', originalColor);
+      console.log('Darker Color:', darkerColor);
+
       button.addEventListener('click', function() {
         this.classList.toggle('active');
-        this.style.backgroundColor = this.classList.contains('active') ? darkerColor : originalColor;
+        if (this.classList.contains('active')) {
+          this.style.backgroundColor = darkerColor;
+        } else {
+          this.style.backgroundColor = originalColor;
+        }
         filterPublications();
       });
     });
 
     function filterPublications() {
       const activeThemes = Array.from(filterButtons)
-        .filter(btn => btn.classList.contains('active'))
-        .map(btn => btn.getAttribute('data-theme'));
+                                .filter(btn => btn.classList.contains('active'))
+                                .map(btn => btn.getAttribute('data-theme'));
 
       publicationItems.forEach(item => {
         const itemThemes = item.getAttribute('data-themes').split(',');
-        item.style.display = activeThemes.length === 0 || activeThemes.every(theme => itemThemes.includes(theme)) ? 'block' : 'none';
+
+        if (activeThemes.length === 0 || activeThemes.every(theme => itemThemes.includes(theme))) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
       });
     }
   });
