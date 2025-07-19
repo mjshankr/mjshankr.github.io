@@ -31,15 +31,29 @@
 #     - metabolomics
 #     - data
 
-- title: "Data-Driven Recommendation of Agents, Temperature, and Equivalence Ratios for Organic Synthesis"
-  authors: Sun, X., Liu, J., Majour, B., Jensen, K.F., Coley, C.W.
-  journal: ChemRxiv
+- title: "Reactions of Surface Peroxides Contribute to Rates and Selectivities for C2H4 Epoxidation on Silve"
+  authors: Ching-Tien Chen, Anna Sviripa, Sugandha Verma, Christopher Paolucci, and David W. Flaherty.
+  journal: ACS Catalysis
   year: 2025
-  url: https://doi.org/10.26434/chemrxiv-2025-4wzkh
-  preprint: 10.26434/chemrxiv-2025-4wzkh
-  preprint_url: https://chemrxiv.org/engage/chemrxiv/article-details/686809c0c1cb1ecda020efc1
-  preprint_year: 2025
-  preprint_site: chemrxiv
+  url: https://pubs.acs.org/doi/full/10.1021/acscatal.4c06945
+  preprint: 
+  preprint_url: 
+  preprint_year: 
+  preprint_site: 
+  main: https://sites.google.com/site/rgounder/
+  themes:
+    - predictive chemistry
+    - data
+  
+  - title: "Reactions of Surface Peroxides Contribute to Rates and Selectivities for C2H4 Epoxidation on Silve"
+  authors: L. Warring, K.S. Westendorff, M.T. Bennett, K. Nam, B.M. Stewart, D.A. Dickie, C. Paolucci, T.B. Gunnoe, and R.J. Gilliard.
+  journal: Angewandte
+  year: 2024
+  url: https://doi.org/10.1002/anie.202415070
+  preprint: 
+  preprint_url: 
+  preprint_year: 
+  preprint_site: 
   main: https://sites.google.com/site/rgounder/
   themes:
     - predictive chemistry
