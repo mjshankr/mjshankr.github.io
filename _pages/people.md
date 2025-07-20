@@ -1,7 +1,7 @@
 ---
-title: "Paolucci Research Group - People"
+title: "Paolucci Group - People"
 layout: gridlay
-excerpt: "Paolucci Research Group: People"
+excerpt: "Paolucci Group: People"
 sitemap: false
 permalink: /people
 ---
