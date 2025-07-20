@@ -1,7 +1,7 @@
 ---
-title: "Coley Research Group - Research"
+title: "Paolucci Research Group - Research"
 layout: research
-excerpt: "Coley Research Group -- Research"
+excerpt: "Paolucci Research Group -- Research"
 sitemap: false
 permalink: /research
 ---
