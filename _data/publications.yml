@@ -43,8 +43,7 @@
   main: https://sites.google.com/site/rgounder/
   si: https://cpaolucc.github.io/
   themes:
-    - predictive chemistry
-    - data
+    - 2025
 
 - title: "Reactions of Surface Peroxides Contribute to Rates and Selectivities for C2H4 Epoxidation on Silver"
   authors: Ching-Tien Chen, Anna Sviripa, Sugandha Verma, Christopher Paolucci, and David W. Flaherty.
@@ -57,4 +56,4 @@
   preprint_site: 
   themes:
     - predictive chemistry
-    - data
+    
