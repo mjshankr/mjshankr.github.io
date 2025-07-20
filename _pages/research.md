@@ -11,29 +11,21 @@ permalink: /research
 
 ### Overview 
 ---
-We work at the interface of chemistry and machine learning to develop models that understand how molecules behave, interact, and react and use that knowledge to engineer new ones. Much of our work focuses on improving computational strategies for small molecule drug discovery, molecular optimization, synthesis planning, and structure elucidation. A long-term goal of our work is to enable autonomous molecular discovery, where hypotheses are proposed algorithmically and tested via experiments with minimal human intervention.
+We work in heterogeneous catalysis using molecular modeling with classical, quantum, and machine learning methods!
 
 <div style="text-align: center">
-<img style="width: 80%;" src="{{ site.url }}{{ site.baseurl }}/images/researchpic/group_poster_2025.jpg" alt="Paolucci research overview"/>
+<img style="width: 100%;" src="{{ site.url }}{{ site.baseurl }}/images/researchpic/group_poster_2025.jpg" alt="Paolucci research overview"/>
 </div>
 
-Small molecules are the predominant modality for medicines, chemical probes, organocatalysts, and specialty monomers among others. They are typically discovered through an iterative process of designing candidate compounds, synthesizing them, and testing their performance, where each repeat of the cycle requires weeks or months. The rate at which this process yields successful compounds can be limited by bottlenecks and mispredictions at all three stages and is plagued by inefficiencies, including underutilization of available data resulting in inadequate predictions of compound performance, compound selection based on intuition or synthetic ease rather than information content, and frequent manual intervention subject to human bias. For example, the hit-to-lead and lead optimization stages of small molecule drug discovery, while only part of the overall pipeline, require several years and millions of dollars for each clinical candidate. Even longer timescales are required to bring a new material to market.
-
-The discovery of these molecules—and scientific discovery more generally—is a problem of inference from incomplete and imperfect information, for which techniques in artificial intelligence are well-suited. However, there are a number of bottlenecks in our current approach to molecular discovery (a few are summarized below in red); overcoming them will require a number of methodological advances (a few are summarized below in blue).
-
-<div style="text-align: center">
-<img style="width: 100%;" src="{{ site.url }}{{ site.baseurl }}/images/researchpic/autonomous-workflow-1024x269.png" alt="Autonomous discovery workflow diagram"/>
-</div>
-
-For a slightly-outdated comprehensive overview of autonomous discovery in the chemical sciences, including a discussion of key challenges, please read our 2019 review article and perspective in Angewandte Chemie or on arxiv: [part one](https://arxiv.org/abs/2003.13754), [part two](https://arxiv.org/abs/2003.13755). Our work falls under the broader umbrella of "[AI for Science](https://www.nature.com/articles/s41586-023-06221-2)".
+We like zeolites, nanoparticles, and nanoparticles in zeolites.
 
 <br/>
 
 ### Current Research Directions
 ---
 
-#### Theme 1
-One of the most important questions one must answer when searching for a molecule that achieves a certain property profile is ‘what should we make next?’ out of the vastness of [chemical space](https://www.sciencedirect.com/science/article/abs/pii/S2589597420302884). Molecules are generally proposed through one of two complementary approaches: virtual screening, where one has a fixed list of candidates, and generative modeling, where one uses algorithms to propose novel molecular structures. Exhaustive virtual screening with a computational oracle (e.g., docking for structure-based drug design) is a viable approach to hit finding, but is not straightforward to apply to the tens of billions of molecules in modern virtual libraries. We work on various methods for selecting and proposing molecular structures during iterative rounds of optimization, both for from discrete libraries and using generative models. The former uses techniques in model-guided optimization (Bayesian optimization) to navigate large discrete design spaces of candidate molecular structures. A thread of particular interest is the development of synthesizability-constrained generative models that propose molecular structures that are synthetically accessible and/or using information about synthesizability as the basis for the downselection of candidates. Sample efficiency is also a primary concern for these moodels, as in silico benchmarks may involve the ‘testing’ of hundreds of thousands of molecules, which is severely misaligned with what is practical, experimentally. Finally, we have sought to better integrate principles of medicinal chemistry and noncovalent interactions into generative design to overcome yet another failure mode of generative models, which is the relatively poor quality of ligands they generate in 3D pocket-conditioned generative tasks.
+#### Theme 1: Zeolites are Cool!
+Zeolites are nanoporous solids that have various utility. The international zeolite association [(IZA)](https://www.iza-structure.org/databases/) is neato. 
 
 _Selected publications (screening/selection/non-generative):_
 <ul style="font-size: smaller">
@@ -57,10 +49,8 @@ _Selected publications (generative design):_
 </ul>
 <br/>
 
-#### Theme 2
-Computational assistance is only useful insofar as it can produce actionable suggestions for experimental validation. The synthesis and testing of new molecules is a common requirement for validation of functional physical matter. Despite significant progress in methodology development, few reactions have achieved widespread use as part of the synthetic chemistry toolbox. Newly discovered reactions may be too narrowly applicable or require excessive optimization to be practical. Overcoming both of these barriers to adoption requires an expansion of substrate scope and straightforward guidelines for how the reaction should be carried out to achieve maximal yield, selectivity, etc. We approach this problem from a statistical modelling perspective, leveraging the collective chemical knowledge reflected in the patent and journal literature to identify robust synthetic and biological transformations, including enzyme catalysis. This builds on our ongoing efforts in ‘[predictive chemistry](https://pubs.rsc.org/en/content/articlelanding/2023/sc/d2sc05089g)’, which encompasses computer-aided synthesis planning, reaction outcome prediction, and related tasks. Our work in this area also explores the intersection of structure-based representation learning and descriptor-based approaches that have become prevalent in physical organic chemistry. A particular challenge is transforming these methods from being qualitative to quantitative, and retrospective to prospective. To support our more ambitious goals of extrapolation, we also develop models that are designed to predict mechanistic pathways with the expectation that a grounding in mechanistic understand may help models generalize to previously-unseen reaction types.
-
-Several data-driven chemistry tools for synthesis planning are available in the open source [ASKCOS](https://arxiv.org/abs/2501.01835) software suite, which has seen use by 35,000+ chemists and is deployed at 15+ pharmaceutical and chemical companies. Try out the public deployment at [askcos.mit.edu](https://askcos.mit.edu) or spin up your own deployment using [these directions](https://gitlab.com/mlpds_mit/askcosv2/askcos-docs/-/wikis/home).
+#### Theme 2: Stuff
+Computational assistance is only useful insofar as it can produce actionable suggestions for experimental validation. 
 
 _Selected publications (retrosynthesis-focused):_
 <ul style="font-size: smaller">
@@ -84,8 +74,8 @@ _Selected publications (outcome prediction-focused):_
 <br/>
 
 
-#### Theme 3
-Small molecule metabolites mediate myriads of biological and environmental phenomena across host-microbiome interactions, plant chemistry, cancer biology, and various other processes. Mass spectrometry is often used as an analytical technique to investigate the small molecules present in a sample, measuring both their masses and fragmentation spectra. However, the complexity and high dimensionality of spectral data makes it difficult to identify unknown metabolites and their roles, with a large majority of detected metabolites remaining unidentified in public data. We are developing a suite of new computational methodologies for higher accuracy annotation of small molecule metabolites from mass spectrometry data that integrate chemistry-informed priors with modern deep learning advancements. These include a variety of _forward_ models as well as _inverse_ models that try to solve the structure-to-spectrum and spectrum-to-structure tasks, respectively. The latter includes methods that treat elucidation as a conditional molecular design task that is therefore amenable to many of the optimization-based and generative approaches we develop in the context of small molecule drug design as well.
+#### Theme 3: More stuff
+Small molecule metabolites mediate myriads of biological and environmental phenomena across host-microbiome interactions, plant chemistry, cancer biology, and various other processes. 
 
 _Selected publications:_
 <ul style="font-size: smaller">
