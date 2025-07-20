@@ -61,7 +61,7 @@ permalink: /publications
     {{ pub.authors }}.
     {% if pub.url %} [{{ pub.title }}]({{ pub.url }}). {% else %} {{pub.title}}. {% endif %}*{{ pub.journal }}*{% if pub.volume %} {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %},{% endif %}{% if pub.pages %} {{ pub.pages }}{% endif %}. ({{ pub.year }})
     {% if pub.doi %} DOI: {{ pub.doi }} {% elsif pub.preprint %} *preprint: {{ pub.preprint }}*{% endif %}
-      {% if pub.main %} [<a href="{{ pub.main }}">Main Text</a>]{% endif %} , {% if pub.si %} [<a href="{{ pub.si }}">Supporting Information</a>]{% endif %}
+      {% if pub.main %} [<a href="{{ pub.main }}">Main Text</a>]{% endif %} {% if pub.si %} [<a href="{{ pub.si }}">Supporting Information</a>]{% endif %}
   </p>
   <!-- Buttons and tags -->
   {% if pub.preprint_url or pub.themes %}
