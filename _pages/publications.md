@@ -1,7 +1,7 @@
 ---
-title: "Coley Lab - Publications"
+title: "Paolucci Group - Publications"
 layout: publications
-excerpt: "Coley Lab -- Publications."
+excerpt: "Paolucci Group -- Publications."
 sitemap: false
 permalink: /publications
 ---
