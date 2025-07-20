@@ -1,5 +1,5 @@
 ---
-title: "Paolucci Research Group - News"
+title: "Paolucci Group - News"
 layout: textlay
 excerpt: "Paolucci Group at UVA."
 sitemap: false
