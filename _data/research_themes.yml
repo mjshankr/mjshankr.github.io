@@ -13,6 +13,12 @@
 - name: automation
   color: "#4eb7c1"
   darker_color: "#25575c"
-- name: data
+- name: 2025
+  color: "#6c757d"
+  darker_color: "#25282b"
+- name: 2024
+  color: "#6c757d"
+  darker_color: "#25282b"
+- name: 2023
   color: "#6c757d"
   darker_color: "#25282b"
