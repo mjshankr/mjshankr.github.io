@@ -61,12 +61,12 @@ permalink: /publications
     {{ pub.authors }}.
     {% if pub.url %} [{{ pub.title }}]({{ pub.url }}). {% else %} {{pub.title}}. {% endif %}*{{ pub.journal }}*{% if pub.volume %} {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %},{% endif %}{% if pub.pages %} {{ pub.pages }}{% endif %}. ({{ pub.year }})
     {% if pub.doi %} DOI: {{ pub.doi }} {% elsif pub.preprint %} *preprint: {{ pub.preprint }}*{% endif %}
-      {% if pub.main %} [<a href="{{ pub.main }}">Main Text</a>]{% endif %} 
+      {% if pub.main %} [<a href="{{ pub.main }}">Main Text</a>]{% endif %} , {% if pub.si %} [<a href="{{ pub.si }}">Supporting Information</a>]{% endif %}
   </p>
   <!-- Buttons and tags -->
   {% if pub.preprint_url or pub.themes %}
   <p style="margin-left: 20px; margin-top: -11px">
-    {% if pub.preprint_url %}<a href="{{ pub.preprint_url }}" class="btn btn-xs btn-primary">Preprint</a>{% endif %}{% if pub.themes %}{% for theme in pub.themes %}{% assign theme_data = themes | where: "name", theme | first %}{% if theme_data %} <span class="badge badge-pill badge-pill-custom" style="background-color: {{ theme_data.color }}">{{ theme }}</span>{% endif %}{% endfor %}, {% if pub.si %} [<a href="{{ pub.si }}">SupportingInformation</a>]{% endif %}
+    {% if pub.preprint_url %}<a href="{{ pub.preprint_url }}" class="btn btn-xs btn-primary">Preprint</a>{% endif %}{% if pub.themes %}{% for theme in pub.themes %}{% assign theme_data = themes | where: "name", theme | first %}{% if theme_data %} <span class="badge badge-pill badge-pill-custom" style="background-color: {{ theme_data.color }}">{{ theme }}</span>{% endif %}{% endfor %}
 
     {% endif %}
   </p>
