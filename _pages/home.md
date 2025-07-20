@@ -1,5 +1,5 @@
 ---
-title: "Paolucci Group"
+title: "Paolucci Research Group"
 layout: homelay
 excerpt: "Paolucci Research Group"
 sitemap: false
