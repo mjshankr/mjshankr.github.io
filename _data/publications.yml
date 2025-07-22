@@ -60,6 +60,20 @@
   themes:
     - 2024
 
+- title: "Impact of sulfur exposure on high-temperature Cu speciation in SSZ-13 Zeolites"
+  authors: K. Mandal, P. Rani, Y.R. Chen, A. Wijerathne, K. Nam, K. Meena, D.A. Kiani, R. Daya, W.S. Epling, and C. Paolucci.
+  journal: Applied Catalysis B: Environment and Energy
+  year: 2024
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0926337324006751
+  preprint: 
+  preprint_url: 
+  preprint_year: 
+  preprint_site: 
+  main: https://sites.google.com/site/rgounder/
+  si: https://cpaolucc.github.io/
+  themes:
+    - 2024
+
 - title: "Condition-Dependent Pd Speciation and NO Adsorption in Pd/Zeolites"
   authors: K. Mandal, Y. Gu, K.S. Westendorff, S. Li, J.A. Pihl, L.C. Grabow, W.S. Epling, and C. Paolucci
   journal: ACS Catalysis
