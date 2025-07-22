@@ -1,7 +1,7 @@
 ---
-title: "Coley Research Group - News"
+title: "Paolucci Group - News"
 layout: textlay
-excerpt: "Coley Lab at MIT."
+excerpt: "Paolucci Group at UVA."
 sitemap: false
 permalink: /news
 ---

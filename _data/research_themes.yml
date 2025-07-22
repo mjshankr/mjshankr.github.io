@@ -1,18 +1,30 @@
-- name: molecular representation
+- name: mobile active sites
   color: "#77c8ad"
   darker_color: "#447062"
-- name: design and optimization
-  color: "#f4667e"
-  darker_color: "#913c4a"
-- name: predictive chemistry
-  color: "#f79b5c"
-  darker_color: "#965e38"
-- name: metabolomics
+- name: machine learning
   color: "#b8a0ff"
   darker_color: "#665791"
-- name: automation
+- name: zeolites
+  color: "#f4667e"
+  darker_color: "#913c4a"
+- name: nanoparticles
   color: "#4eb7c1"
   darker_color: "#25575c"
-- name: data
+- name: 2025
+  color: "#6c757d"
+  darker_color: "#25282b"
+- name: 2024
+  color: "#6c757d"
+  darker_color: "#25282b"
+- name: 2023
+  color: "#6c757d"
+  darker_color: "#25282b"
+- name: 2022
+  color: "#6c757d"
+  darker_color: "#25282b"
+- name: 2021
+  color: "#6c757d"
+  darker_color: "#25282b"
+- name: 5+ years old
   color: "#6c757d"
   darker_color: "#25282b"
